@@ -10,10 +10,7 @@ using namespace std;
 
 void checkForCoord(double x1, double x2, double x3, double y1, double y2, double y3)
 {
-	if (x1 != x2 && y1 != y2);
-	else if (x2 != x3 && y2 != y3);
-	else if (x3 != x1 && y3 != y3);
-	else
+	if (x1 == x2 && y1 == y2) || (x2 == x3 && y2 == y3) || (x3 == x1 && y3 == y3)
 	{
 		cout << "Ошибка! Точки совпадают." << endl;
 		system("pause");
